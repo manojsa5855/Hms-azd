@@ -1,7 +1,6 @@
 ---
 - hosts: any
   become: true
-  remote_user: root
   tasks:
 
 # tasks file for webapp
