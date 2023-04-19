@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine" "example" {
     azurerm_network_interface.nw-interface.id,
   ]
     tags = {
-    "name" = "demo"
+    name = "demo"
   }
 
   admin_ssh_key {
