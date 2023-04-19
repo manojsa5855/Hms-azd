@@ -1,5 +1,5 @@
 resource "azurerm_linux_virtual_machine" "example" {
-  name                = "example-machine"
+  name                = "demo"
   resource_group_name =var.resource_group_name
   location            =var.location
   size                = "Standard_F2"
@@ -7,9 +7,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   network_interface_ids = [
     azurerm_network_interface.nw-interface.id,
   ]
-  tags = {
-    name = "demo"
-  }
+
 
   admin_ssh_key {
     username   = "adminuser"
