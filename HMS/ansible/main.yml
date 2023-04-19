@@ -42,7 +42,7 @@
 
       
     - name: install nodemon
-      command: chdir=/home/ansible/hms npm install nodemon
+      command: chdir=/home/ansible/hms npm install -g nodemon
       become: true
       
 
