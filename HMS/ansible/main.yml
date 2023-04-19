@@ -12,7 +12,7 @@
 
     - name: install nodejs
       apt:
-        pkg: nodejs
+        pkg: nodejs-legacy
         state: present
       become: true
     
