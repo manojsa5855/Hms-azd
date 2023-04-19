@@ -17,7 +17,7 @@
       become: true
     
     - name: install npm
-      command: apt install npm
+      command: apt install npm -y
 
     - name: install git
       apt:
