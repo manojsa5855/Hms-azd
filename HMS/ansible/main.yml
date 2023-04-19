@@ -5,22 +5,19 @@
 
 # tasks file for webapp
 
-    - name: install development tools
-      command: sudo yum install -y gcc-c++ make 
+    - name: update
+      command: sudo apt update
       become: true
 
-    - name: curlit
-      shell: curl -sL https://rpm.nodesource.com/setup_16.x | sudo -E bash -
-      become: true
 
     - name: install nodejs
-      yum:
+      apt:
         pkg: nodejs
         state: present
       become: true
 
     - name: install git
-      yum:
+      apt:
         pkg: git
         state: present
       become: true
