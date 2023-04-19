@@ -34,7 +34,7 @@ exports.getLogin = (req, res, next) => {
 exports.postLogin = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
-      host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+      host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
       user: "chandu",
       password: "manjunath",
       database: "hotel"
@@ -72,7 +72,7 @@ exports.getCreateAccount = (req, res, next) => {
 exports.postCreateAccount = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
-      host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+      host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
       user: "chandu",
       password: "manjunath",
       database: "hotel"
@@ -106,7 +106,7 @@ exports.getCategory = (req, res, next) => {
 exports.postCategory = (req, res, next) => {
    //console.log(req.body);
    var connectDB = mysql.createConnection({
-      host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+      host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
       user: "chandu",
       password: "manjunath",
       database: "hotel"
@@ -141,7 +141,7 @@ exports.postStatus = (req, res, next) => {
 
    //console.log(req.body);
    var connectDB = mysql.createConnection({
-      host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+      host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
       user: "chandu",
       password: "manjunath",
       database: "hotel"
@@ -175,7 +175,7 @@ exports.postStatus = (req, res, next) => {
 exports.getShowStatus = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
-      host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+      host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
       user: "chandu",
       password: "manjunath",
       database: "hotel"
@@ -209,7 +209,7 @@ exports.getShowStatus = (req, res, next) => {
 exports.deleteBooking =(req,res,next)=>{
    //console.log(req.body);
    var connectDB = mysql.createConnection({
-      host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+      host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
       user: "chandu",
       password: "manjunath",
       database: "hotel"

@@ -10,7 +10,7 @@ exports.getLogin = (req, res, next) => {
     }
     else {
         var connectDB = mysql.createConnection({
-            host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+            host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
             user: "chandu",
             password: "manjunath",
             database: "hotel"
@@ -36,7 +36,7 @@ exports.getLogin = (req, res, next) => {
 exports.postLogin = (req, res, next) => {
 
     var connectDB = mysql.createConnection({
-        host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+        host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
         user: "chandu",
         password: "manjunath",
         database: "hotel"
@@ -80,7 +80,7 @@ exports.postChnageStatus = (req, res, next) => {
     //console.log(req.body);
 
     var connectDB = mysql.createConnection({
-        host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+        host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
         user: "chandu",
         password: "manjunath",
         database: "hotel"
@@ -137,7 +137,7 @@ exports.getAddHotel = (req, res, next) => {
 exports.postAddHotel = (req, res, next) => {
    
     var connectDB = mysql.createConnection({
-        host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+        host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
         user: "chandu",
         password: "manjunath",
         database: "hotel"
@@ -232,7 +232,7 @@ exports.postSearch = (req, res, next) => {
     //console.log(req.body);
 
     var connectDB = mysql.createConnection({
-        host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+        host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
         user: "chandu",
         password: "manjunath",
         database: "hotel"
@@ -256,7 +256,7 @@ exports.postSearch = (req, res, next) => {
 exports.getUpdate = (req, res, next) => {
     // console.log(req.body);
     var connectDB = mysql.createConnection({
-        host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+        host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
         user: "chandu",
         password: "manjunath",
         database: "hotel"
@@ -282,7 +282,7 @@ exports.getUpdate = (req, res, next) => {
 exports.updatePrevData = (req, res, next) => {
 
     var connectDB = mysql.createConnection({
-        host: "database-2.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
+        host: "database-1.cybxsdwsqxqj.ap-south-1.rds.amazonaws.com",
         user: "chandu",
         password: "manjunath",
         database: "hotel"

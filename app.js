@@ -3,7 +3,6 @@ const path    =  require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 
-
 const app = express();
 
 
@@ -28,4 +27,4 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(userRouter);
 app.use("/admin" ,adminRouter);
 
-app.listen(3000, () => console.log("Server is Running..."));
+app.listen(80, () => console.log("Server is Running..."));
