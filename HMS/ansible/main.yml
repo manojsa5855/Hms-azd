@@ -47,3 +47,10 @@
       command: chdir=/home/adminuser/hms sudo npm install
       become: true
 
+    - name: start server
+      command: chdir=/home/adminuser/hms/ sudo npm start > /dev/null 2>&1 &
+      become: true
+      async: 4200
+      poll: 0
+        
+      
