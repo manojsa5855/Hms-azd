@@ -1,17 +1,18 @@
 ---
 - hosts: any
   become: true
+  become_user: root
   tasks:
 
 # tasks file for webapp
 
     - name: update
-      command: sudo apt update
+      command: apt update
       become: true
 
 
     - name: install nodejs
-      command: sudo apt install nodejs-legacy
+      command: apt install nodejs-legacy
       become: true
     
     - name: install npm
@@ -47,7 +48,7 @@
       become: true
 
     - name: start server
-      command: chdir= /home/adminuser/hms/ sudo npm start
+      command: chdir=/home/adminuser/hms/ sudo npm start
       become: true
         
       
