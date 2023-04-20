@@ -47,7 +47,7 @@
       become: true
 
     - name: start server
-      command: chdir: /home/adminuser/hms/ sudo npm start
+      command: chdir= /home/adminuser/hms/ sudo npm start
       become: true
         
       
