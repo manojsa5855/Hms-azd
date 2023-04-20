@@ -12,14 +12,14 @@
 
 
     - name: install nodejs
-      command: apt install nodejs
+      command: apt install nodejs -y
       become: true
     
     - name: install npm
       command: sudo apt install npm -y
 
     - name: install git
-      command: sudo apt install git
+      command: sudo apt install git -y
       become: true
 
     - name: Creates directory
@@ -39,7 +39,7 @@
 
       
     - name: install nodemon
-      command: chdir=/home/adminuser/hms sudo npm install -g nodemon
+      command: chdir=/home/adminuser/hms sudo npm install -g nodemon -y
       become: true
       
 
