@@ -12,7 +12,7 @@
 
 
     - name: install nodejs
-      command: apt install nodejs-legacy
+      command: apt install nodejs
       become: true
     
     - name: install npm
