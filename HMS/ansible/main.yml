@@ -6,35 +6,31 @@
 # tasks file for webapp
 
     - name: update
-      command: apt update
+      command: sudo apt update
       become: true
 
 
     - name: install nodejs
-      apt:
-        pkg: nodejs-legacy
-        state: present
+      command: sudo apt install nodejs-legacy
       become: true
     
     - name: install npm
-      command: apt install npm -y
+      command: sudo apt install npm -y
 
     - name: install git
-      apt:
-        pkg: git
-        state: present
+      command: sudo apt install git
       become: true
 
     - name: Creates directory
       file:
-        path: /home/ubuntu/hms
+        path: /home/adminuser/hms
         state: directory
       become: true
 
     - name: Clone a github repository
       git:
         repo: https://github.com/ManjunathNayak-23/Nodejsdemo.git
-        dest: /home/ubuntu/hms
+        dest: /home/adminuser/hms
         clone: yes
         update: yes
         force: true
@@ -42,19 +38,16 @@
 
       
     - name: install nodemon
-      command: chdir=/home/ubuntu/hms npm install -g nodemon
+      command: chdir=/home/adminuser/hms sudo npm install -g nodemon
       become: true
       
 
     - name: Go to the folder and execute command
-      command: chdir=/home/ubuntu/hms npm install
+      command: chdir=/home/adminuser/hms sudo npm install
       become: true
 
     - name: start server
-      command: sudo npm start
-      args:
-        chdir: /home/ubuntu/hms/
-      async: 42
-      poll: 0
+      command: chdir: /home/adminuser/hms/ sudo npm start
       become: true
-      ignore_errors: yes
+        
+      
