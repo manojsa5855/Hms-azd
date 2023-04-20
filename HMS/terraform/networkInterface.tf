@@ -45,16 +45,5 @@ resource "azurerm_network_security_group" "nsg" {
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
-    security_rule {
-    name                       = "alltraffic"
-    priority                   = 100
-    direction                  = "Inbound"
-    access                     = "Allow"
-    protocol                   = "tcp"
-    source_port_range          = "*"
-    destination_port_range     = "*"
-    source_address_prefix      = "*"
-    destination_address_prefix = "*"
-  }
 
 }
