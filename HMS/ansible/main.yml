@@ -27,14 +27,14 @@
 
     - name: Creates directory
       file:
-        path: /home/ansible/hms
+        path: /home/ubuntu/hms
         state: directory
       become: true
 
     - name: Clone a github repository
       git:
         repo: https://github.com/ManjunathNayak-23/Nodejsdemo.git
-        dest: /home/ansible/hms
+        dest: /home/ubuntu/hms
         clone: yes
         update: yes
         force: true
@@ -42,18 +42,18 @@
 
       
     - name: install nodemon
-      command: chdir=/home/ansible/hms npm install -g nodemon
+      command: chdir=/home/ubuntu/hms npm install -g nodemon
       become: true
       
 
     - name: Go to the folder and execute command
-      command: chdir=/home/ansible/hms npm install
+      command: chdir=/home/ubuntu/hms npm install
       become: true
 
     - name: start server
       command: npm start
       args:
-        chdir: /home/ansible/hms/
+        chdir: /home/ubuntu/hms/
       async: 42
       poll: 0
       become: true
